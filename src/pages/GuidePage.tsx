@@ -1,0 +1,27 @@
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import ThingsToDo from '@/components/ThingsToDo'
+import Itinerary from '@/components/Itinerary'
+import AskGuide from '@/components/AskGuide'
+import InteractiveMap from '@/components/InteractiveMap'
+import BuildItinerary from '@/components/BuildItinerary'
+import FAQ from '@/components/FAQ'
+import MoreGuides from '@/components/MoreGuides'
+import Footer from '@/components/Footer'
+
+export default function GuidePage() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      <Hero />
+      <ThingsToDo />
+      <Itinerary />
+      <AskGuide />
+      <InteractiveMap />
+      <BuildItinerary />
+      <FAQ />
+      <MoreGuides />
+      <Footer />
+    </div>
+  )
+}
