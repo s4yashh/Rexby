@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 export default function AskGuide() {
-  const [question, setQuestion] = useState('What is the best season to visit?')
-  const [isThinking, setIsThinking] = useState(true)
+  const [_question] = useState('What is the best season to visit?')
+  const [_isThinking] = useState(true)
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
@@ -34,7 +34,7 @@ export default function AskGuide() {
           {/* User Message */}
           <div className="flex gap-4 justify-end mb-8">
             <div className="bg-blue-500 text-white rounded-lg p-4 max-w-xs">
-              <p>{question}</p>
+              <p>{_question}</p>
             </div>
             <img
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=44&h=44&fit=crop"
@@ -44,7 +44,7 @@ export default function AskGuide() {
           </div>
 
           {/* AI Response - Thinking */}
-          {isThinking && (
+          {_isThinking && (
             <div className="flex gap-4">
               <img
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=44&h=44&fit=crop"

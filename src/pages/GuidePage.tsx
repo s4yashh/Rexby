@@ -13,13 +13,15 @@ export default function GuidePage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <Hero />
-      <ThingsToDo />
-      <Itinerary />
-      <AskGuide />
-      <InteractiveMap />
-      <BuildItinerary />
-      <FAQ />
+      <div className="flex flex-col bg-offwhite">
+        <Hero />
+        <ThingsToDo />
+        <Itinerary />
+        <AskGuide />
+        <InteractiveMap />
+        <BuildItinerary />
+        <FAQ />
+      </div>
       <MoreGuides />
       <Footer />
     </div>
