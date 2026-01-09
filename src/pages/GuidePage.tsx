@@ -17,9 +17,9 @@ export default function GuidePage() {
         <Hero />
         <ThingsToDo />
         <Itinerary />
+        <BuildItinerary />
         <AskGuide />
         <InteractiveMap />
-        <BuildItinerary />
         <FAQ />
       </div>
       <MoreGuides />

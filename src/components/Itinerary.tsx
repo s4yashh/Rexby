@@ -4,39 +4,28 @@ export default function Itinerary() {
       <div className="grid grid-cols-2 gap-12 items-start">
         {/* Left Column */}
         <div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">1 itinerary</h2>
-          <p className="text-gray-500 text-base leading-relaxed mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">1 itinerary</h2>
+          <p className="text-gray-500 text-sm leading-relaxed mb-6">
             Get expertly curated itineraries that help you organise all the 'things to do' in an ideal time order
           </p>
-          <button className="px-6 py-2 border border-gray-900 text-gray-900 font-semibold rounded hover:bg-gray-50 transition">
+          <a href="#" className="underline text-gray-900 font-semibold text-sm hover:text-gray-700">
             Preview
-          </button>
+          </a>
         </div>
 
         {/* Right Column */}
-        <div className="flex gap-6">
+        <div className="flex gap-4">
           {/* Map Card */}
-          <div className="flex-1 rounded-lg overflow-hidden bg-gray-300 h-80 flex items-center justify-center">
-            <div className="w-full h-full bg-gradient-to-br from-blue-300 to-blue-500 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-white text-sm font-semibold mb-2">Map Image</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Itinerary Card */}
-          <div className="flex-1 rounded-lg overflow-hidden bg-gray-100 h-80 flex flex-col justify-end p-6">
+          <div className="flex-1 rounded-xl overflow-hidden h-64 flex items-end justify-start p-4 bg-cover bg-center" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=320&fit=crop)'}}>
             <div className="text-white">
-              <span className="text-sm font-semibold block mb-2">8 Days</span>
-              <h3 className="text-xl font-bold">Lofoten Road Trip</h3>
+              <p className="text-xs font-semibold mb-1">8 days</p>
+              <p className="text-lg font-bold">Lofoten Road Trip</p>
             </div>
           </div>
 
-          {/* Preview Button Card */}
-          <div className="flex-1 rounded-lg overflow-hidden bg-gray-200 h-80 flex items-center justify-center border border-gray-300">
-            <button className="px-6 py-3 border border-gray-900 text-gray-900 font-semibold rounded hover:bg-gray-50 transition">
-              Preview
-            </button>
+          {/* Preview Card */}
+          <div className="flex-1 rounded-xl overflow-hidden h-64 border border-gray-300 flex items-center justify-center bg-white">
+            <p className="font-semibold text-gray-900">Preview</p>
           </div>
         </div>
       </div>
